@@ -30,7 +30,6 @@ export default function TodoList() {
                     setList([]);
                 } else {
                     setList(newData);
-                    console.log("newData", newData);
                 }
             }
 
@@ -80,7 +79,6 @@ export default function TodoList() {
         // Update the data in the database
         const dataRef = ref(db, DB_TODO_KEY);
         set(dataRef, newData);
-        console.log("newData", newData);
     }
 
     return (

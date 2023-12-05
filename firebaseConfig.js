@@ -12,7 +12,6 @@ import { getDatabase } from "firebase/database";
 let cfgEnv = null;
 try {
   cfgEnv = JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG);
-  console.log(cfgEnv);
 } catch (e) {
   alert("Firebase Config belum diatur. Ikuti tutorial setup di modul untuk men setup firebaseConfig.js");
   throw new Error("Firebase Config belum diatur. Ikuti tutorial setup di modul untuk men setup firebaseConfig.js");
